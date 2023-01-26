@@ -11,7 +11,11 @@ class AuthCubit extends Cubit<AuthState> {
     scopes: ['email'],
   );
 
-  void isloggedIn() {
+  void isloggedIn({bool isTestLogged = false}) {
+    if(isTestLogged){
+      emit(AuthLoggedIn());
+      return;
+    }
     UserPreferences.getlogged().then((value) {
       if (value) {
         emit(AuthLoggedIn());

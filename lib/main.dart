@@ -17,14 +17,16 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key, required this.apiClient}) : super(key: key);
+  //for testing
+  final bool isloggedIn;
+  const MyApp({Key? key, required this.apiClient,this.isloggedIn=false}) : super(key: key);
   final ApiClient apiClient;
   @override
   Widget build(BuildContext context) {
     return RepositoryProvider(
       create: (context) => apiClient,
       child: BlocProvider<AuthCubit>(
-        create: (context) => AuthCubit()..isloggedIn(),
+        create: (context) => AuthCubit()..isloggedIn(isTestLogged: isloggedIn),
         child: MaterialApp.router(
           debugShowCheckedModeBanner: false,
           title: 'NSIO Assignment',
