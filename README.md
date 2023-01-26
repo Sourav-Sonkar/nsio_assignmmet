@@ -13,6 +13,15 @@
 - `packages` contains the dependencies of the project
     - `packages/api_client` contains the api client for the project
     - `packages/user_preferences` contains the shared preferences logic for the project
+## Dependencies used
+- `flutter_bloc` for state management
+- `equatable` for comparing objects
+- `http` for making http requests
+- `shared_preferences` for storing data locally
+- `flutter_test` for testing
+- `google_sign_in` for google sign in
+- `pull_to_refresh` for pull to refresh
+- `bloc_test` for testing blocs
 ## To download the project
 - Download the app-release.apk file which is present in the root directory of the project
 - Install the apk file on your android device
