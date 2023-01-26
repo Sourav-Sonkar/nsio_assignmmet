@@ -31,16 +31,16 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             primarySwatch: Colors.blueGrey,
             textTheme: const TextTheme(
-              bodyText1: TextStyle(
+              bodyLarge: TextStyle(
                 fontWeight: FontWeight.w700,
                 fontSize: 16,
               ),
-              bodyText2: TextStyle(
+              bodyMedium: TextStyle(
                 color: CustomColors.textLight,
                 fontSize: 12,
                 fontWeight: FontWeight.w400,
               ),
-              headline1: TextStyle(
+              displayLarge: TextStyle(
                 color: CustomColors.textDark,
                 fontSize: 14,
                 fontWeight: FontWeight.w500,

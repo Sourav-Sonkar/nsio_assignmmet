@@ -53,11 +53,11 @@ class SingleTileDesign extends StatelessWidget {
         title: Text(attribute1,
             style: Theme.of(context)
                 .textTheme
-                .headline1
+                .displayLarge
                 ?.copyWith(color: CustomColors.textDark)),
         subtitle: Text(
           value1,
-          style: Theme.of(context).textTheme.headline1?.copyWith(
+          style: Theme.of(context).textTheme.displayLarge?.copyWith(
               color: CustomColors.textGrey, fontWeight: FontWeight.w400),
         ),
       ),

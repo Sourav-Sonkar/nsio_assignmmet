@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -30,7 +32,7 @@ class LoginScreen extends StatelessWidget {
             "Sign in with",
             style: Theme.of(context)
                 .textTheme
-                .bodyText1
+                .bodyLarge
                 ?.copyWith(color: CustomColors.pureWhite),
           ).wrapCenter().paddingForOnly(top: 88, bottom: 24),
           BlocConsumer<LoginCubit, LoginState>(
@@ -61,13 +63,13 @@ class LoginScreen extends StatelessWidget {
                     Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                   Image.asset(
                     'assets/images/google.png',
-                    height: 24,
+                    height: 30,
                   ),
                   Text(
                     "Google",
                     style: Theme.of(context)
                         .textTheme
-                        .bodyText1
+                        .bodyLarge
                         ?.copyWith(color: CustomColors.background),
                   ).paddingForOnly(left: 24),
                 ]).paddingWithSymmetry(vertical: 16),

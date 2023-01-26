@@ -78,7 +78,7 @@ class ProfileScreen extends StatelessWidget {
                         "Name",
                         style: Theme.of(context)
                             .textTheme
-                            .bodyText1
+                            .bodyLarge
                             ?.copyWith(color: CustomColors.textGrey),
                       ).paddingForOnly(top: 40),
                       FutureBuilder(
@@ -96,7 +96,7 @@ class ProfileScreen extends StatelessWidget {
                                 snapShot.data.toString(),
                                 style: Theme.of(context)
                                     .textTheme
-                                    .bodyText1
+                                    .bodyLarge
                                     ?.copyWith(color: CustomColors.textDark),
                               ),
                             );
@@ -108,7 +108,7 @@ class ProfileScreen extends StatelessWidget {
                         "Email",
                         style: Theme.of(context)
                             .textTheme
-                            .bodyText1
+                            .bodyLarge
                             ?.copyWith(color: CustomColors.textGrey),
                       ).paddingForOnly(top: 10),
                       FutureBuilder(
@@ -126,7 +126,7 @@ class ProfileScreen extends StatelessWidget {
                                 snapShot.data.toString(),
                                 style: Theme.of(context)
                                     .textTheme
-                                    .bodyText1
+                                    .bodyLarge
                                     ?.copyWith(color: CustomColors.textDark),
                               ),
                             );
@@ -146,7 +146,7 @@ class ProfileScreen extends StatelessWidget {
                           "Logout",
                           style: Theme.of(context)
                               .textTheme
-                              .bodyText1
+                              .bodyLarge
                               ?.copyWith(color: CustomColors.pureWhite),
                         ).wrapCenter(),
                       ).asButton(() {

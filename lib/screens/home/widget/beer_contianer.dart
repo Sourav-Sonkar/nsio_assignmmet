@@ -41,7 +41,7 @@ class BeerContainer extends StatelessWidget {
                     ),
                     child: Text(
                       "First Brewed: ${beer.firstBrewed}",
-                      style: Theme.of(context).textTheme.bodyText2,
+                      style: Theme.of(context).textTheme.bodyMedium,
                     ).paddingWithSymmetry(horizontal: 7, vertical: 3),
                   ),
                 ],
@@ -63,7 +63,7 @@ class BeerContainer extends StatelessWidget {
                     beer.name ?? "",
                     softWrap: true,
                     maxLines: 1,
-                    style: Theme.of(context).textTheme.headline1,
+                    style: Theme.of(context).textTheme.displayLarge,
                   ),
                 ),
                 Text(
@@ -73,7 +73,7 @@ class BeerContainer extends StatelessWidget {
                   overflow: TextOverflow.ellipsis,
                   style: Theme.of(context)
                       .textTheme
-                      .bodyText2
+                      .bodyMedium
                       ?.copyWith(color: CustomColors.textGrey),
                 ).paddingWithSymmetry(vertical: 4),
                 Row(children: [
@@ -108,14 +108,14 @@ class BeerAttributes extends StatelessWidget {
       children: [
         Text(
           attribute,
-          style: Theme.of(context).textTheme.bodyText2?.copyWith(
+          style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                 color: CustomColors.textDark,
                 fontWeight: FontWeight.w500,
               ),
         ),
         Text(
           value,
-          style: Theme.of(context).textTheme.bodyText2?.copyWith(
+          style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                 color: CustomColors.textGrey,
               ),
         ),

@@ -45,14 +45,14 @@ class BeerDetails extends StatelessWidget {
                       child: Text(beer.name ?? "",
                               style: Theme.of(context)
                                   .textTheme
-                                  .bodyText1
+                                  .bodyLarge
                                   ?.copyWith(color: CustomColors.text))
                           .paddingLTRB(14, 0, 0, 12),
                     ),
                     Text(beer.tagline ?? "",
                             style: Theme.of(context)
                                 .textTheme
-                                .headline1
+                                .displayLarge
                                 ?.copyWith(color: CustomColors.textGrey))
                         .paddingLTRB(14, 0, 0, 21),
                   ],
@@ -83,7 +83,7 @@ class BeerDetails extends StatelessWidget {
                         "Description",
                         style: Theme.of(context)
                             .textTheme
-                            .bodyText1
+                            .bodyLarge
                             ?.copyWith(color: CustomColors.textDark),
                       ),
                       const SizedBox(height: 12),
@@ -91,7 +91,7 @@ class BeerDetails extends StatelessWidget {
                         beer.description ?? "",
                         style: Theme.of(context)
                             .textTheme
-                            .headline1
+                            .displayLarge
                             ?.copyWith(color: CustomColors.textGrey),
                       ),
                       const SizedBox(height: 22),
@@ -99,7 +99,7 @@ class BeerDetails extends StatelessWidget {
                         "First Brewed",
                         style: Theme.of(context)
                             .textTheme
-                            .bodyText1
+                            .bodyLarge
                             ?.copyWith(color: CustomColors.textDark),
                       ),
                       const SizedBox(height: 12),
@@ -107,13 +107,13 @@ class BeerDetails extends StatelessWidget {
                         beer.firstBrewed ?? "",
                         style: Theme.of(context)
                             .textTheme
-                            .headline1
+                            .displayLarge
                             ?.copyWith(color: CustomColors.textGrey),
                       ),
                       const SizedBox(height: 22),
                       Text(
                         "Getting know your beer better",
-                        style: Theme.of(context).textTheme.bodyText1?.copyWith(
+                        style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                             color: CustomColors.textDark,
                             fontWeight: FontWeight.w500),
                       ),

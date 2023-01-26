@@ -67,7 +67,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       softWrap: true,
                       style: Theme.of(context)
                           .textTheme
-                          .bodyText1
+                          .bodyLarge
                           ?.copyWith(color: CustomColors.text),
                     ).paddingWithSymmetry(horizontal: 14),
                     BlocBuilder<HomeCubit, HomeState>(
