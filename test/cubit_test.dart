@@ -21,6 +21,4 @@ void main() {
         act: (cubit) => cubit.getBeers(),
         expect: () => [isA<HomeLoading>(), isA<HomeLoaded>()]);
   });
-
-
 }
